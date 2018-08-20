@@ -1,9 +1,6 @@
 class TasksController < ApplicationController
 
     def index
-    
-       
-    
     end
     
     def show
@@ -15,9 +12,7 @@ class TasksController < ApplicationController
             render json: {status: 'SUCCESS',message: 'There you go:',  data: array_output}, status: :ok
         else
             render json: {status: 'ERROR', message: 'Uhmmmm, Do it again'}, status: :unprocessable_entity
-          
-        
-        
+       
         end
     end
 end
