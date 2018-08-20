@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 class="title">Hello, Adjust</h1>
+    <%= form_tag("/show") do %>
+        
+            <%= label_tag(:user_input, "please input a number") %>
+            <%= number_field_tag 'value', required: true %>   
+            <%= submit_tag('Trigger Json') %>
+     
+    <% end %>
+</div>
